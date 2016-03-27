@@ -1,9 +1,5 @@
 class User < ActiveRecord::Base
   validates :name, :email, :password, :phone, presence: true
-  # def initialize(attributes = {})
-  #   @name  = attributes[:name]
-  #   @email = attributes[:email]
-  #   @password = attributes[:password]
-  #   @phone = attributes[:phone]
-  # end
+
+    # user.url = auth_hash['info']['urls'][user.provider.capitalize]
 end
