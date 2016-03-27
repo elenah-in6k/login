@@ -1,0 +1,9 @@
+<h1>Sing Up</h1>
+
+<%= simple_form_for(@user) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :email %>
+    <%= f.input :phone %>
+    <%= f.input :password %>
+    <%= f.button :submit %>
+<% end %>

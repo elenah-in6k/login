@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accessor :name, :email, :password, :phone
+  validates :name, :email, :password, :phone, presence: true
   # def initialize(attributes = {})
   #   @name  = attributes[:name]
   #   @email = attributes[:email]

@@ -1,0 +1,16 @@
+<table class="table">
+  <tread>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </tread>
+
+  <tbody>
+  <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %> </td>
+      </tr>
+  <% end %>
+  </tbody>
+
+</table>
